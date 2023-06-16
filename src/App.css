@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+Button {
+  margin: 10px;
+  margin-top: 5px;
+}
+
+.AppDiv {
+  display: flex;
+  flex-direction: row;
+  /*margin-right: 1em;*/
+  /*margin-left: 1em;*/
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.Score {
+  display: flex;
+  align-items: center;
+  margin-top: 2.5em;
+  margin-right: 1em;
+  margin-left: 1em;
+  margin-bottom: 2.5em;
+}

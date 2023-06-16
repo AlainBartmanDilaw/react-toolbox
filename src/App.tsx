@@ -1,26 +1,26 @@
+import { ConfigProvider } from 'antd';
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import logo from "./psg.png";
+import logoRéalMadrid from "./Réal.png";
+import Team from './Team';
+
+const App: React.FC = () => (
+    <ConfigProvider
+        theme={{
+            token: {
+                colorPrimary: '#0b557e',
+            },
+        }}
+    >
+        <div className="AppDiv">
+            <div className="Score">Finale de Champion's League</div>
+            <Team nom={"Paris Saint-Germain"} logo={logo}/>
+            <div className="Score">3 - 0</div>
+            <Team nom={"Madrid"} logo={logoRéalMadrid}/>
+        </div>
+    </ConfigProvider>
+);
 
 export default App;
