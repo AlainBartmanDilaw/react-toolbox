@@ -5,22 +5,6 @@ import { ILineData } from './DataInterface';
 import Team from './Team';
 import './Team.css';
 
-interface lineData {
-    "Numero": number,
-    "Context": string,
-    "Data": {
-        "Domicile": {
-            "nom": string,
-            "logo": string
-        },
-        "Exterieur": {
-            "nom": string,
-            "logo": string
-        },
-        "Score": string
-    }
-}
-
 interface ThisProps {
     numMatch: number;
 }
@@ -37,7 +21,7 @@ const getMatch = (num: number) => {
         Numero: 0,
     };
 
-    return stockData.find((m: lineData) => m.Numero === num) ?? defaultLine;
+    return stockData.find((m: ILineData) => m.Numero === num) ?? defaultLine;
 }
 
 const Match: React.FC<ThisProps> = ({numMatch}) => {
