@@ -4,16 +4,18 @@ import './Team.css';
 
 interface ThisProps {
     nom: string;
-    logo?: string;
+    logo: string;
 }
 
-const Team: React.FC<ThisProps> = ({nom, logo}) => {
+const Team: React.FC<ThisProps> =  ({nom, logo}) => {
 
+    console.log(logo)
     return (
         <>
             <div className="team">
                 <Image className="image"
-                       src={logo}
+                       src={require(`${logo}`)}
+                       preview={false}
                 />
                 <div>
                     {nom}

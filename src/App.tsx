@@ -1,12 +1,19 @@
 import { ConfigProvider } from 'antd';
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
+import SelectMatch from './SelectMatch';
+import Match from './Match';
 
-import logo from "./psg.png";
-import logoRéalMadrid from "./Réal.png";
-import Team from './Team';
 
-const App: React.FC = () => (
+
+const App: React.FC = () => {
+
+    const [numMatch, setNumMatch] = useState(1);
+    const onChange = (value: any) => {
+        setNumMatch(value);
+    };
+    return (
+
     <ConfigProvider
         theme={{
             token: {
@@ -14,13 +21,13 @@ const App: React.FC = () => (
             },
         }}
     >
-        <div className="AppDiv">
-            <div className="Score">Finale de Champion's League</div>
-            <Team nom={"Paris Saint-Germain"} logo={logo}/>
-            <div className="Score">3 - 0</div>
-            <Team nom={"Madrid"} logo={logoRéalMadrid}/>
-        </div>
+        <SelectMatch onChange={onChange} value={numMatch}/>
+        <Match numMatch={numMatch}></Match>
     </ConfigProvider>
-);
+
+    );
+
+}
+
 
 export default App;
