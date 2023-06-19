@@ -23,14 +23,8 @@ export const stockData: ILineData[] = [
         "Numero": 1,
         "Context": "Finale de Champion's League",
         "Data": {
-            "Domicile": {
-                "nom": "Paris Saint-Germain",
-                "logo": "./psg.png"
-            },
-            "Exterieur": {
-                "nom": "Madrid",
-                "logo": "./Réal.png"
-            },
+            Team_Home: 1,
+            Team_Away: 2,
             "Score": "4 - 0"
         }
     },
@@ -38,14 +32,8 @@ export const stockData: ILineData[] = [
         "Numero": 2,
         "Context": "1/2 finale de Champion's League",
         "Data": {
-            "Domicile": {
-                "nom": "Olympique Marseille",
-                "logo": "./om.svg.png"
-            },
-            "Exterieur": {
-                "nom": "Madrid",
-                "logo": "./Réal.png"
-            },
+            Team_Home: 2,
+            Team_Away: 1,
             "Score": "0 - 2"
         }
     },
@@ -53,14 +41,8 @@ export const stockData: ILineData[] = [
         "Numero": 4,
         "Context": "1/4 finale de Champion's League",
         "Data": {
-            "Domicile": {
-                "nom": "Paris Saint-Germain",
-                "logo": "./psg.png"
-            },
-            "Exterieur": {
-                "nom": "Madrid",
-                "logo": "./Réal.png"
-            },
+            Team_Home: 3,
+            Team_Away: 2,
             "Score": "4 - 0"
         }
     },
