@@ -9,7 +9,7 @@ interface ThisProps {
 
 const Team: React.FC<ThisProps> =  ({nom, logo}) => {
 
-    console.log(logo)
+    // console.log(logo)
     return (
         <>
             <div className="team">

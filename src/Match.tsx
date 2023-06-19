@@ -28,11 +28,8 @@ const Match: React.FC<ThisProps> = ({numMatch}) => {
     const data: ILineData = getMatch(numMatch)
 
     const Score = data.Data.Score;
-    console.log(data.Data)
     const Team_Home = teamData.find((t:ITeamData) => t.idt === data.Data.Team_Home);
-    console.log(Team_Home)
     const Team_Away = teamData.find((t:ITeamData) => t.idt === data.Data.Team_Away);
-    console.log(Team_Away)
     const Context = data.Context;
     return (
         <div className="AppDiv">
