@@ -1,6 +1,6 @@
 {
   "name": "toolbox",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -22,7 +22,7 @@
     "patch": "npm version patch && npm run genv",
     "minor": "npm version minor && npm run genv",
     "genv": "genversion --es6 src/autobuild_version.tsx",
-    "start": "npm run genv && react-scripts start",
+    "start": "react-scripts start",
     "build": "npm run minor && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
