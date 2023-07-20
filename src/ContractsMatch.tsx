@@ -9,7 +9,7 @@ const ContractsMatch: React.FC = () => {
     return (
         <Form name={"ContractsMatch"}
             {...layout}>
-            <Form.Item label="Score Exact ">
+            <Form.Item label="Score Exact">
                 <InputNumberPositif defaultValue={20}/>
             </Form.Item>
             <Form.Item label="Différence">
