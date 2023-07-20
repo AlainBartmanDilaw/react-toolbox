@@ -3,7 +3,7 @@ import React from 'react';
 import './App.css';
 import ShowContrats from './ShowContrats';
 import ShowMatch from './ShowMatch';
-import {version} from '../package.json';
+import {version} from './autobuild_version';
 
 
 const App: React.FC = () => {
