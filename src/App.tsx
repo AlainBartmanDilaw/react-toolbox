@@ -21,7 +21,7 @@ const App: React.FC = () => {
         <ShowContrats/>
 
         <footer>
-            {version}
+            Version courante : {version}
         </footer>
 
     </ConfigProvider>

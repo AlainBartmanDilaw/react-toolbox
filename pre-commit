@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Get the current version from package.json
+current_version=$(node -pe "require('./package.json').version")
+
+# Increment the version (you can modify this logic as per your requirements)
+# For example, to increment the patch version:
+new_version=$(echo $current_version | awk -F. -v OFS=. '{$NF++;print}')
+
+# Update the version in package.json
+node -e "const fs = require('fs'); \
+  const packageJson = JSON.parse(fs.readFileSync('./package.json')); \
+  packageJson.version = '$new_version'; \
+  fs.writeFileSync('./package.json', JSON.stringify(packageJson, null, 2));"
+
+# Stage the updated package.json
+git add package.json
+
+# Inform the user about the version update
+echo "Updated package.json version from $current_version to $new_version"
+
+# Exit successfully
+exit 0
+
