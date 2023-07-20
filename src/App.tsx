@@ -1,17 +1,13 @@
 import { ConfigProvider } from 'antd';
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
-import SelectMatch from './SelectMatch';
-import Match from './Match';
-
+import ShowContrats from './ShowContrats';
+import ShowMatch from './ShowMatch';
+import {version} from '../package.json';
 
 
 const App: React.FC = () => {
 
-    const [numMatch, setNumMatch] = useState(1);
-    const onChange = (value: any) => {
-        setNumMatch(value);
-    };
     return (
 
     <ConfigProvider
@@ -21,8 +17,13 @@ const App: React.FC = () => {
             },
         }}
     >
-        <SelectMatch onChange={onChange} value={numMatch}/>
-        <Match numMatch={numMatch}></Match>
+        <ShowMatch/>
+        <ShowContrats/>
+
+        <footer>
+            {version}
+        </footer>
+
     </ConfigProvider>
 
     );

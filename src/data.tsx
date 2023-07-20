@@ -38,12 +38,30 @@ export const stockData: ILineData[] = [
         }
     },
     {
+        "Numero": 3,
+        "Context": "1/8 de finale de Champion's League",
+        "Data": {
+            Team_Home: 1,
+            Team_Away: 4,
+            "Score": "0 - 0"
+        }
+    },
+    {
         "Numero": 4,
         "Context": "1/4 finale de Champion's League",
         "Data": {
             Team_Home: 3,
             Team_Away: 2,
-            "Score": "4 - 0"
+            "Score": "1 - 3"
+        }
+    },
+    {
+        "Numero": 5,
+        "Context": "1/32 finale de Champion's League",
+        "Data": {
+            Team_Home: 1,
+            Team_Away: 2,
+            "Score": "1 - 2"
         }
     },
 ]
