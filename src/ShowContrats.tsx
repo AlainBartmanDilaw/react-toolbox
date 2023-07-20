@@ -7,7 +7,7 @@ const ShowContrats: React.FC = () => {
         <div>
             <Row gutter={16}>
                 <Col span={8}>
-                    <Card title="Match contract">
+                    <Card title="Match contracts">
                         <ContractsMatch/>
                     </Card>
                 </Col>
