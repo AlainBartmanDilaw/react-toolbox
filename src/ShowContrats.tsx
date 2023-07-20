@@ -1,5 +1,4 @@
 import { Card, Col, Row } from 'antd';
-import BonusesPoints from './BonusesPoints';
 import ContractsMatch from './ContractsMatch';
 
 const ShowContrats: React.FC = () => {
@@ -13,8 +12,8 @@ const ShowContrats: React.FC = () => {
                     </Card>
                 </Col>
                 <Col span={8}>
-                    <Card title="Bonuses">
-                        <BonusesPoints/>
+                    <Card title="Bonuses" bordered={false}>
+                        Bonuses
                     </Card>
                 </Col>
                 <Col span={8}>
