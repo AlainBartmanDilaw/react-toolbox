@@ -3,16 +3,16 @@ import InputNumberPositif from 'src/InputNumberPositif';
 
 const BonusPoints: React.FC = () => {
     const layout = {
-        labelCol: { span: 10 },
-        wrapperCol: { span: 16 },
+        labelCol: { span: 8 },
+        // wrapperCol: { span: 16 },
     };
     return (
         <Form name={"Bonus Points"}
               {...layout}>
-            <Form.Item label="Domicile Score exact">
+            <Form.Item label="Dom. Score exact">
                 <InputNumberPositif defaultValue={2}/>
             </Form.Item>
-            <Form.Item label="Extérieur Score exact">
+            <Form.Item label="Ext. Score exact">
                 <InputNumberPositif defaultValue={2}/>
             </Form.Item>
         </Form>
