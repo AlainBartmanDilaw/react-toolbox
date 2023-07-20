@@ -1,6 +1,6 @@
 import { Card, Col, Row } from 'antd';
-import BonusPoints from './BonusPoints';
-import ContractsMatch from './ContractsMatch';
+import BonusPoints from 'src/BonusPoints';
+import ContractsMatch from 'src/ContractsMatch';
 
 const ShowContrats: React.FC = () => {
 

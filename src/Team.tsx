@@ -1,6 +1,6 @@
 import { Image } from 'antd';
 import React from 'react';
-import './Team.css';
+import 'src/Team.css';
 
 interface ThisProps {
     nom: string;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { InputNumber } from 'antd';
-import { stockData } from './data';
-import './SelectMatch.css';
+import { stockData } from 'src/data';
+import 'src/SelectMatch.css';
 
 interface ThisComponentProps {
     value: number;

@@ -1,4 +1,4 @@
-import { ILineData, ITeamData } from './DataInterface';
+import { ILineData, ITeamData } from 'src/DataInterface';
 
 export const teamData: ITeamData[] = [
     {

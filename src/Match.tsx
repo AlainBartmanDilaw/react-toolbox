@@ -1,9 +1,9 @@
 import React from 'react';
 
 import { stockData, teamData } from "./data";
-import { ILineData, ITeamData } from './DataInterface';
-import Team from './Team';
-import './Team.css';
+import { ILineData, ITeamData } from 'src/DataInterface';
+import Team from 'src/Team';
+import 'src/Team.css';
 
 interface ThisProps {
     numMatch: number;

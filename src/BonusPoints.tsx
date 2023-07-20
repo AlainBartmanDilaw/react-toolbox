@@ -1,5 +1,5 @@
 import { Form } from 'antd';
-import InputNumberPositif from './InputNumberPositif';
+import InputNumberPositif from 'src/InputNumberPositif';
 
 const BonusPoints: React.FC = () => {
     const layout = {

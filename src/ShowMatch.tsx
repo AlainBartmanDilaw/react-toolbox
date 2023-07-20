@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Match from './Match';
-import SelectMatch from './SelectMatch';
+import Match from 'src/Match';
+import SelectMatch from 'src/SelectMatch';
 
 const ShowMatch: React.FC = () => {
 

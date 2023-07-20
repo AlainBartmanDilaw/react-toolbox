@@ -1,9 +1,9 @@
 import { ConfigProvider } from 'antd';
 import React from 'react';
-import './App.css';
-import ShowContrats from './ShowContrats';
-import ShowMatch from './ShowMatch';
-import {version} from './autobuild_version';
+import 'src/App.css';
+import ShowContrats from 'src/ShowContrats';
+import ShowMatch from 'src/ShowMatch';
+import {version} from 'src/autobuild_version';
 
 
 const App: React.FC = () => {
