@@ -5,7 +5,7 @@ import SelectMatch from 'src/SelectMatch';
 
 const ShowMatch: React.FC = () => {
 
-    const [numMatch, setNumMatch] = useState(1);
+    const [ numMatch, setNumMatch ] = useState(1);
     const onChange = (value: any) => {
         setNumMatch(value);
     };
