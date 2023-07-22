@@ -68,3 +68,16 @@ footer {
 .Card {
   height: 25em;
 }
+
+.carousel-container {
+  width: 800px; /* Set the width of the Carousel container as needed */
+  margin: 0 auto; /* Center the Carousel container */
+}
+
+/* Resize the images inside the Carousel */
+.carousel-container img {
+  max-width: 100%; /* Set the maximum width of the images to their container's width */
+  max-height: 400px; /* Set the maximum height of the images as needed */
+  display: block; /* Remove any extra spacing below the images */
+  margin: 0 auto; /* Center the images horizontally within the Carousel */
+}
