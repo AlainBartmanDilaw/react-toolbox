@@ -1,4 +1,4 @@
-import "betsCarousel.css";
+import "./betsCarousel.css";
 import { Carousel } from 'antd';
 import React from 'react';
 import images from 'src/images';
