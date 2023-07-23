@@ -19,7 +19,7 @@ const App: React.FC = () => {
             }}
         >
             <div className="carousel-container">
-                <Carousel autoplay autoplaySpeed={3000}>
+                <Carousel autoplay autoplaySpeed={5000}>
                     {
                         images.map(
                             (image: string, index: number) => (
