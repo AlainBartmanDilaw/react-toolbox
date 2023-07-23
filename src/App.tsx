@@ -2,7 +2,7 @@ import { ConfigProvider } from 'antd';
 import React from 'react';
 import 'src/App.css';
 import { version } from 'src/autobuild_version';
-import BetsCarousel from 'src/Components/betsCarousel';
+import MasterDetailForm from 'src/Components/MasterDetailForm';
 import ShowContrats from 'src/ShowContrats';
 import ShowMatch from 'src/ShowMatch';
 
@@ -18,7 +18,8 @@ const App: React.FC = () => {
                 },
             }}
         >
-            <BetsCarousel/>
+            <MasterDetailForm/>
+            {/*<BetsCarousel/>*/}
             <ShowMatch/>
             <ShowContrats/>
 
