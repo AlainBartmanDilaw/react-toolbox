@@ -19,6 +19,11 @@ const App: React.FC = () => {
                 },
             }}
         >
+            <header>
+                <div>
+                    Version courante : {version}
+                </div>
+            </header>
             <EditableCells/>
             <MasterDetailForm/>
             {/*<BetsCarousel/>*/}
@@ -26,7 +31,6 @@ const App: React.FC = () => {
             <ShowContrats/>
 
             <footer>
-                Version courante : {version}
             </footer>
 
         </ConfigProvider>
