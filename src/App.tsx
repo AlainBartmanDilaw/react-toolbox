@@ -1,8 +1,8 @@
-import { Carousel, ConfigProvider } from 'antd';
+import { ConfigProvider } from 'antd';
 import React from 'react';
 import 'src/App.css';
 import { version } from 'src/autobuild_version';
-import images from 'src/images';
+import BetsCarousel from 'src/Components/betsCarousel';
 import ShowContrats from 'src/ShowContrats';
 import ShowMatch from 'src/ShowMatch';
 
@@ -18,19 +18,7 @@ const App: React.FC = () => {
                 },
             }}
         >
-            <div className="carousel-container">
-                <Carousel autoplay autoplaySpeed={5000}>
-                    {
-                        images.map(
-                            (image: string, index: number) => (
-                                <div key={index}>
-                                    <img src={image} alt={`${index + 1}`}/>
-                                </div>
-                            )
-                        )
-                    }
-                </Carousel>
-            </div>
+            <BetsCarousel/>
             <ShowMatch/>
             <ShowContrats/>
 
