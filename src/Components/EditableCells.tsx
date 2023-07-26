@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useRef, useState } from 'react';
 import type { InputRef } from 'antd';
+import { AppstoreAddOutlined, DeleteOutlined } from '@ant-design/icons';
 import { Button, Form, Input, Popconfirm, Table } from 'antd';
 import type { FormInstance } from 'antd/es/form';
 import './EditableCells.css';
@@ -156,7 +157,8 @@ const App: React.FC = () => {
             render: (_, record: {key?: React.Key}) => {
                 return dataSource.length >= 1 ? (
                     <Popconfirm title="Sure to delete?" onConfirm={() => handleDelete(record.key)}>
-                        <Button danger={true}>Delete</Button>
+                        {/*<Button icon={<AppstoreAddOutlined/>}>Adding</Button>*/}
+                        <Button icon={<DeleteOutlined />} danger={true}>Delete</Button>
                     </Popconfirm>
                 ) : null;
             },
@@ -210,7 +212,7 @@ const App: React.FC = () => {
 
     return (
         <div>
-            <Button onClick={handleAdd} type="primary" style={{ marginBottom: 16 }}>
+            <Button icon={<AppstoreAddOutlined/>} onClick={handleAdd} type="primary" style={{ marginBottom: 16 }}>
                 Add a row
             </Button>
             <Table
