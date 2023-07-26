@@ -1,7 +1,7 @@
 import { ConfigProvider } from 'antd';
 import React from 'react';
 import 'src/App.css';
-import { version } from 'src/autobuild_version';
+import Version from 'src/Components/Version';
 import EditableCells from 'src/Components/EditableCells';
 import MasterDetailForm from 'src/Components/MasterDetailForm';
 import ShowContrats from 'src/ShowContrats';
@@ -19,11 +19,7 @@ const App: React.FC = () => {
                 },
             }}
         >
-            <header>
-                <div>
-                    Version courante : {version}
-                </div>
-            </header>
+            <Version/>
             <EditableCells/>
             <MasterDetailForm/>
             {/*<BetsCarousel/>*/}
